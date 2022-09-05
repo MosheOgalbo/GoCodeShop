@@ -20,7 +20,7 @@ const Routing = () => {
 
     const getProductsApi = async () => {
         
-        const StoredetailsUrl = "http://localhost:8000/api/products/";
+        const StoredetailsUrl = "http://localhost:7001/api/products/";
         const response = await axios.get(StoredetailsUrl);
         console.log(StoredetailsUrl)
         const data = await response.data;
