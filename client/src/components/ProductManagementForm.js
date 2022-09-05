@@ -54,7 +54,7 @@ const ProductManagementForm = ({ categories, setListOpject, listOpject }) => {
 
 
         const newProduct = { title, description, price, category, image }
-        const productAdded = await axios({ method: 'post', url: 'http://localhost:7001/api/products', data: newProduct });
+        const productAdded = await axios({ method: 'post', url: 'https://mosheogalbo-shop.onrender.com/api/products', data: newProduct });
         setListOpject(prev => [productAdded.data, ...prev])
 
         setTitle('')
